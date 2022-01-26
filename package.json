@@ -1,0 +1,81 @@
+{
+  "name": "arco-design-pro-vue",
+  "description": "Arco Design Pro for Vue",
+  "version": "1.0.0",
+  "private": true,
+  "author": "ArcoDesign Team",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --config ./config/vite.config.dev.ts",
+    "build": "vue-tsc --noEmit && vite build --config ./config/vite.config.prod.ts",
+    "lint-staged": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.vue": [
+      "stylelint --fix",
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{less,css}": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@arco-design/web-vue": "^2.16.2",
+    "@vueuse/core": "^7.5.5",
+    "arco-design-pro-vue": "^2.2.0",
+    "axios": "^0.25.0",
+    "dayjs": "^1.10.7",
+    "echarts": "^5.2.2",
+    "lodash": "^4.17.21",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.9",
+    "query-string": "^7.1.0",
+    "vue": "^3.2.29",
+    "vue-echarts": "^6.0.2",
+    "vue-i18n": "^9.2.0-beta.29",
+    "vue-router": "4.0.12"
+  },
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.16.2",
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@types/lodash": "^4.14.178",
+    "@types/mockjs": "^1.0.6",
+    "@types/nprogress": "^0.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "@vitejs/plugin-vue": "^2.1.0",
+    "@vitejs/plugin-vue-jsx": "^1.3.3",
+    "@vue/babel-plugin-jsx": "^1.1.1",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.3.0",
+    "less": "^4.1.2",
+    "lint-staged": "^12.3.1",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.3.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0",
+    "typescript": "^4.5.5",
+    "vite": "^2.7.13",
+    "vite-plugin-eslint": "^1.3.0",
+    "vite-svg-loader": "^3.1.2",
+    "vue-tsc": "^0.31.1"
+  },
+  "peerDependencies": {
+    "@arco-design/web-vue": ">=2.0.0-beta.7"
+  }
+}
