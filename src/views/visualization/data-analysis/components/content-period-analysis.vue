@@ -60,7 +60,7 @@ export default defineComponent({
           boundaryGap: false,
           axisLine: {
             lineStyle: {
-              color: isDark.value ? '#3f3f3f' : '#A9AEB8',
+              color: isDark ? '#3f3f3f' : '#A9AEB8',
             },
           },
           axisTick: {
@@ -92,7 +92,7 @@ export default defineComponent({
           },
           splitLine: {
             lineStyle: {
-              color: isDark.value ? '#3F3F3F' : '#E5E6EB',
+              color: isDark ? '#3F3F3F' : '#E5E6EB',
             },
           },
         },
@@ -115,7 +115,7 @@ export default defineComponent({
             type: 'line',
             smooth: true,
             showSymbol: false,
-            color: isDark.value ? '#3D72F6' : '#246EFF',
+            color: isDark ? '#3D72F6' : '#246EFF',
             symbol: 'circle',
             symbolSize: 10,
             emphasis: {

@@ -60,10 +60,9 @@ module.exports = {
         tsx: 'never',
       },
     ],
-    'import/prefer-default-export': 0,
-    'import/no-extraneous-dependencies': 0,
-    'no-console': 1,
-    'no-shadow': 0,
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'no-param-reassign': 0,
+    'prefer-regex-literals': 0,
+    'import/no-extraneous-dependencies': 0,
   },
 };

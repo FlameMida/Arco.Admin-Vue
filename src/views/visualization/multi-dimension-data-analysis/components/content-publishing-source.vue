@@ -19,7 +19,7 @@ export default defineComponent({
     const { chartOption } = useChartOption((isDark) => {
       const graphicElementStyle = {
         textAlign: 'center',
-        fill: isDark.value ? 'rgba(255,255,255,0.7)' : '#4E5969',
+        fill: isDark ? 'rgba(255,255,255,0.7)' : '#4E5969',
         fontSize: 14,
         lineWidth: 10,
         fontWeight: 'bold',
@@ -32,7 +32,7 @@ export default defineComponent({
           icon: 'circle',
           itemWidth: 8,
           textStyle: {
-            color: isDark.value ? 'rgba(255,255,255,0.7)' : '#4E5969',
+            color: isDark ? 'rgba(255,255,255,0.7)' : '#4E5969',
           },
           itemStyle: {
             borderWidth: 0,
@@ -80,7 +80,7 @@ export default defineComponent({
             center: ['11%', '50%'],
             label: {
               formatter: '{d}% ',
-              color: isDark.value ? 'rgba(255, 255, 255, 0.7)' : '#4E5969',
+              color: isDark ? 'rgba(255, 255, 255, 0.7)' : '#4E5969',
             },
             itemStyle: {
               borderColor: isDark.value ? '#000' : '#fff',

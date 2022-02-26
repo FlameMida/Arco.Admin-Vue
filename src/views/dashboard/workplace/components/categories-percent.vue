@@ -34,7 +34,7 @@ export default defineComponent({
           icon: 'circle',
           itemWidth: 8,
           textStyle: {
-            color: isDark.value ? 'rgba(255, 255, 255, 0.7)' : '#4E5969',
+            color: isDark ? 'rgba(255, 255, 255, 0.7)' : '#4E5969',
           },
           itemStyle: {
             borderWidth: 0,
@@ -53,7 +53,7 @@ export default defineComponent({
               style: {
                 text: '内容量',
                 textAlign: 'center',
-                fill: isDark.value ? '#ffffffb3' : '#4E5969',
+                fill: isDark ? '#ffffffb3' : '#4E5969',
                 fontSize: 14,
               },
             },
@@ -64,7 +64,7 @@ export default defineComponent({
               style: {
                 text: '928,531',
                 textAlign: 'center',
-                fill: isDark.value ? '#ffffffb3' : '#1D2129',
+                fill: isDark ? '#ffffffb3' : '#1D2129',
                 fontSize: 16,
                 fontWeight: 500,
               },

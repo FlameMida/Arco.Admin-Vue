@@ -32,7 +32,7 @@ export default defineComponent({
           itemHeight: 10,
           itemGap: 20,
           textStyle: {
-            color: isDark.value ? '#ffffff' : '#4E5969',
+            color: isDark ? '#ffffff' : '#4E5969',
           },
         },
         radar: {
@@ -47,16 +47,16 @@ export default defineComponent({
             { name: '娱乐', max: 25000 },
           ],
           axisName: {
-            color: isDark.value ? '#ffffff' : '#1D2129',
+            color: isDark ? '#ffffff' : '#1D2129',
           },
           axisLine: {
             lineStyle: {
-              color: isDark.value ? '#484849' : '#E5E6EB',
+              color: isDark ? '#484849' : '#E5E6EB',
             },
           },
           splitLine: {
             lineStyle: {
-              color: isDark.value ? '#484849' : '#E5E6EB',
+              color: isDark ? '#484849' : '#E5E6EB',
             },
           },
           splitArea: {
@@ -77,7 +77,7 @@ export default defineComponent({
                 name: '纯文本',
                 symbol: 'none',
                 itemStyle: {
-                  color: isDark.value ? '#6CAAF5' : '#249EFF',
+                  color: isDark ? '#6CAAF5' : '#249EFF',
                 },
               },
               {

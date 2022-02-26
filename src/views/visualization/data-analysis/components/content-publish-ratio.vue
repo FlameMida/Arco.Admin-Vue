@@ -66,7 +66,7 @@ export default defineComponent({
           data: xAxis.value,
           axisLine: {
             lineStyle: {
-              color: isDark.value ? '#3f3f3f' : '#A9AEB8',
+              color: isDark ? '#3f3f3f' : '#A9AEB8',
             },
           },
           axisTick: {
@@ -91,7 +91,7 @@ export default defineComponent({
           },
           splitLine: {
             lineStyle: {
-              color: isDark.value ? '#3F3F3F' : '#E5E6EB',
+              color: isDark ? '#3F3F3F' : '#E5E6EB',
             },
           },
         },
@@ -114,7 +114,7 @@ export default defineComponent({
             stack: 'one',
             type: 'bar',
             barWidth: 16,
-            color: isDark.value ? '#4A7FF7' : '#246EFF',
+            color: isDark ? '#4A7FF7' : '#246EFF',
           },
           {
             name: '图文类',
